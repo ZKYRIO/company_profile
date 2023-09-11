@@ -1,0 +1,85 @@
+:root {
+    --green: rgba(49, 192, 44, 1);
+}
+
+a {
+    color: var(--green);
+}
+
+.btn-success:hover {
+    background: rgb(2, 61, 0);
+}
+
+.iq-sidebar-menu .iq-menu .sidebar-item:hover>a {
+    background: #fff;
+    color: #199101 !important;
+    border-radius: 25px;
+}
+
+nav .logout-btn:hover {
+    background: red;
+    border-color: red;
+}
+
+nav .ri-more-2-fill:before {
+    color: var(--green);
+}
+
+nav .ri-fullscreen-line:before {
+    color: var(--green);
+}
+
+nav .ri-fullscreen-exit-line:before {
+    color: var(--green);
+}
+
+.iq-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.identitasWeb .form .iq-card-body,
+.userEdit .form .iq-card-body {
+    display: block;
+    flex-direction: column;
+}
+
+.identitasWeb .form .iq-card-body .form-row,
+.bannerSlider .form .iq-card-body .form-row,
+.userEdit .form .iq-card-body .form-row {
+    margin-bottom: 2rem;
+}
+
+.iq-card .count h1 {
+    font-size: 4rem !important;
+}
+
+.iq-card .count h3 {
+    margin-top: -15px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background: var(--green);
+}
+
+/* Khusus User Edit */
+.form-row .form-gambar {
+    display: flex;
+    align-items: center;
+}
+
+.form-row .form-gambar img {
+    margin: 0 1rem 0 0;
+    border-radius: 25%;
+}
+
+
+/* Table Head ( TH ) Center */
+thead tr th {
+    text-align: center !important;
+}
