@@ -69,4 +69,38 @@ function upload($fotoFor) {
 
 }
 
+function updateArtikel ($data) {
+    global $db;
+
+    $id_artikel = $data["id_artikel"];
+    $judul = htmlspecialchars($data["judul_artikel"]);
+    // $tanggal = htmlspecialchars($data["tanggal_artikel"]);
+    $deskripsi = htmlspecialchars($data["deskripsi_artikel"]);
+    $content = htmlspecialchars($data["content_artikel"]);
+
+    $bannerArtikel_lama = $data["banner_artikel_lama"];
+
+    
+    // cek apakah user pilih gambar baru atau tidak
+    if ( $_FILES["banner_artikel"]["error"] === 4 ) {
+        $bannerArtikel = $bannerArtikel_lama;
+    } else {
+        $fotoFor = "banner_artikel";
+        $bannerArtikel = upload($fotoFor);
+        // cek apakah sudah sesuai atau tidak
+        if ( $bannerArtikel === false ) {
+            return false;
+        } else {
+            // Hapus banner artikel lama yang ada di file
+            unlink("./img/bannerArtikel/$bannerArtikel_lama");
+        }
+    }
+
+
+    $query = "UPDATE artikel SET judul_artikel = '$judul', deskripsi_artikel = '$deskripsi', isi_artikel = '$content', banner_artikel = '$bannerArtikel' WHERE id_artikel = $id_artikel";
+    mysqli_query($db, $query);
+
+    return mysqli_affected_rows($db);
+}
+
 ?>
