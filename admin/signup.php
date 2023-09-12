@@ -42,8 +42,11 @@ if ( isset($_POST["signUp"]) ) {
     <link rel="stylesheet" href="css/style.css" type="text/css" >
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- My Style -->
+    <link rel="stylesheet" href="./css/myStyle.css">
+
 </head>
-<body>
+<body class="signup">
     <!-- loader Start -->
     <div id="loading">
         <div id="loading-center">
@@ -76,6 +79,15 @@ if ( isset($_POST["signUp"]) ) {
                             </div>
                             <div class="form-group d-flex flex-column">
                                 <input type="hidden" name="fotoProfil" id="foto" value="profDefault.jpg">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <label for="foto_user"><strong>Foto Profile</strong></label>
+                                        <div class="form-gambar">
+                                            <img id="output_image" width="75" style="display: none;">
+                                        <input type="file" class="form-control-file" name="foto_user" id="foto_user" onchange="preview_image(event)">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="d-inline-block w-100">
                                 <button type="submit" name="signUp" class="btn btn-success float-right">Sign Up</button>
@@ -148,6 +160,19 @@ if ( isset($_POST["signUp"]) ) {
     <script src="js/chart-custom.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/custom.js"></script>
+
+    <!-- Preview Image After Upload -->
+    <script type='text/javascript'>
+        function preview_image(event) {
+            var reader = new FileReader();
+            reader.onload = function() {
+                var output = document.getElementById('output_image');
+                output.style.display = "flex"; // khusus form yang dipake untuk tambah data
+                output.src = reader.result;
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
 </body>
 
 <!-- Mirrored from yulan.bianchenglianmeng.cn/template/202203213155/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 May 2023 04:06:56 GMT -->
