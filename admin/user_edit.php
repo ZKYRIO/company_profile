@@ -34,7 +34,7 @@ $user = mysqli_fetch_assoc($users);
             <div class="iq-card form">
                 <div class="iq-card-header d-flex justify-content-between">
                     <div class="iq-header-title">
-                        <h4 class="card-title">Form Tambah User</h4>
+                        <h4 class="card-title">Form Edit User</h4>
                     </div>
                 </div>
 
