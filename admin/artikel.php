@@ -28,7 +28,7 @@ $rowCount = mysqli_num_rows($articles);
                                 <tr>
                                     <th width="1%">No</th:w>
                                     <th>Judul</th>
-                                    <th>Tanggal Upload</th>
+                                    <th width="15%">Tanggal Upload</th>
                                     <th>Deskripsi</th>
                                     <th width="10%">Action</th>
                                 </tr>
