@@ -42,10 +42,6 @@ if (isset($_POST["submit"])) {
                                 <label for="judul_artikel"><strong>Judul Artikel</strong></label>
                                 <input type="text" name="judul_artikel" id="judul_artikel" class="form-control" required >
                             </div>
-                            <div class="col">
-                                <label for="tanggal_artikel"><strong>Tanggal Artikel</strong></label>
-                                <input type="date" name="tanggal_artikel" id="tanggal_artikel" class="form-control" required >
-                            </div>
                         </div>
                         <div class="form-row">
                             <div class="col">
