@@ -6,7 +6,7 @@ function insertArtikel($data) {
 
     $id_user = $data["id_user"];
     $judul = htmlspecialchars($data["judul_artikel"]);
-    $tanggal = htmlspecialchars($data["tanggal_artikel"]);
+    $tanggal = date('m-d-Y');
     $deskripsi = htmlspecialchars($data["deskripsi_artikel"]);
     $content = htmlspecialchars($data["content_artikel"]);
 
@@ -14,7 +14,7 @@ function insertArtikel($data) {
     $bannerArtikel = upload($fotoFor);
 
     // sql insert query
-    $query = "INSERT INTO artikel VALUES( NULL , $id_user ,'$judul' , '$tanggal' , '$deskripsi' , '$content' , '$bannerArtikel' ) ";
+    $query = "INSERT INTO artikel VALUES( NULL , $id_user ,'$judul' , STR_TO_DATE('$tanggal','%m-%d-%Y') , '$deskripsi' , '$content' , '$bannerArtikel' ) ";
     mysqli_query($db, $query);
 
     return mysqli_affected_rows($db);
