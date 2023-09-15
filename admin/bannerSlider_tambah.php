@@ -23,7 +23,7 @@ if (isset($_POST["submit"])) {
 
 ?>
 
-<div class="container bannerSlider" style="min-height: 10000px;">
+<div class="container bannerSliderTambah formpage" >
     <div class="row">
         <div class="col-sm-12">
             <div class="iq-card form">

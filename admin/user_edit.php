@@ -28,7 +28,7 @@ $user = mysqli_fetch_assoc($users);
 
 ?>
 
-<div class="container userEdit" style="min-height: 100vh;">
+<div class="container userEdit formpage">
     <div class="row">
         <div class="col-sm-12">
             <div class="iq-card form">

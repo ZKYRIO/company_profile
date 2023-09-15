@@ -28,7 +28,7 @@ $article = mysqli_fetch_assoc($articles);
 
 ?>
 
-<div class="container userEdit" style="min-height: 100vh;">
+<div class="container artikelEdit formpage">
     <div class="row">
         <div class="col-sm-12">
             <div class="iq-card form">

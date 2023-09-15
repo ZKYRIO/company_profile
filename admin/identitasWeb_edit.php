@@ -26,7 +26,7 @@ $identitasWebs = mysqli_query($db, "SELECT * FROM identitas_web WHERE id_identit
 $identitasWeb = mysqli_fetch_assoc($identitasWebs);
 ?>
 
-<div class="container identitasWeb" style="min-height: 10000px;">
+<div class="container identitasWeb formpage">
     <div class="row">
         <div class="col-sm-12">
             <div class="iq-card form">

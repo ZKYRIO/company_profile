@@ -39,15 +39,12 @@ nav .ri-fullscreen-exit-line:before {
     align-items: center;
 }
 
-.identitasWeb .form .iq-card-body,
-.userEdit .form .iq-card-body {
+.formpage .form .iq-card-body {
     display: block;
     flex-direction: column;
 }
 
-.identitasWeb .form .iq-card-body .form-row,
-.bannerSlider .form .iq-card-body .form-row,
-.userEdit .form .iq-card-body .form-row {
+.formpage .form .iq-card-body .form-row {
     margin-bottom: 2rem;
 }
 

@@ -26,7 +26,7 @@ $sliders = mysqli_query($db, "SELECT * FROM slider WHERE id_slider = $id");
 $slider = mysqli_fetch_assoc($sliders);
 ?>
 
-<div class="container bannerSlider" style="min-height: 10000px;">
+<div class="container bannerSliderEdit formpage">
     <div class="row">
         <div class="col-sm-12">
             <div class="iq-card form">

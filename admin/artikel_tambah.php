@@ -23,7 +23,7 @@ if (isset($_POST["submit"])) {
 
 ?>
 
-<div class="container identitasWeb" style="min-height: 10000px;">
+<div class="container formpage" style="min-height: 10000px;">
     <div class="row">
         <div class="col-sm-12">
             <div class="iq-card form">
