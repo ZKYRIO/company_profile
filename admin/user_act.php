@@ -101,11 +101,29 @@ function updateUser ($data) {
 
     $id = $data["id_user"];
     $nama = htmlspecialchars($data["nama"]);
-    $email = htmlspecialchars($data["email"]);
+    $emailBaru = htmlspecialchars($data["email"]);
+    $emailLama = $data["email_lama"];
     $passwordDefault = $data["passwordDefault"];
     $passwordBaru = htmlspecialchars($data["passwordBaru"]);
     $konfirmPass = htmlspecialchars($data["konfirmPass"]);
     $fotoLama = $data["foto_user_lama"];
+
+    // Cek apakah email sudah ada di database atau belum
+    $result = mysqli_query($db, " SELECT email_user FROM user WHERE email_user = '$emailBaru' ");
+    $hasil = mysqli_fetch_assoc($result);
+
+    if ($emailBaru == $emailLama) {
+        $email = $emailLama;
+    } elseif ($hasil["email_user"] == $emailBaru) {
+        echo "
+        <script>
+            alert(' email sudah ada !');
+        </script>
+        ";
+        return false;
+    } else {
+        $email = $emailBaru;
+    }
 
     // Cek apakah user ganti password atau tidak
     if ( !$passwordBaru == "" && !$konfirmPass == "" ) {

@@ -48,6 +48,7 @@ $user = mysqli_fetch_assoc($users);
                             </div>
                             <div class="col">
                                 <label for="email"><strong>Email</strong></label>
+                                <input type="hidden" name="email_lama" value="<?php echo $user['email_user'] ?>">
                                 <input type="email" name="email" id="email" class="form-control" value="<?php echo $user["email_user"] ?>">
                             </div>
                         </div>
