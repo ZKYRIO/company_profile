@@ -1,5 +1,7 @@
+    </div> 
+    <!-- content page END -->
     <!-- Footer -->
-        <footer class="bg-white iq-footer ml-3 fixed-bottom" style="z-index: 1;">
+    <footer class="bg-white iq-footer ml-3" style="z-index: 1; margin-top: 2rem;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6">
@@ -15,7 +17,6 @@
             </div>
         </footer>
     <!-- Footer END -->
-    </div> <!-- content page END -->
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
