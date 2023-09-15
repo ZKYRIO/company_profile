@@ -59,7 +59,7 @@ if (isset($_POST["submit"])) {
                             <div class="col">
                                 <label for="foto_user"><strong>Foto Profile</strong></label>
                                 <div class="form-gambar">
-                                    <img id="output_image" width="75" style="display: none;">
+                                    <img id="output_image" width="125" style="display: none;">
                                 <input type="file" class="form-control-file" name="foto_user" id="foto_user" onchange="preview_image(event)" required>
                                 </div>
                             </div>
