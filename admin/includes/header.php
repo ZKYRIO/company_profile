@@ -103,7 +103,7 @@ if (!isset($_SESSION["login"])) {
                         <i class="ri-subtract-line"></i>
                     </li>
                     <li class="sidebar-item">
-                        <a href="../../../companyProfile/admin/signout.php" class="iq-waves-effect">
+                        <a href="../../../companyProfile/admin/signout.php" class="iq-waves-effect" onclick="return confirm('Apakah Kamu Yakin Untuk Logout?')">
                             <i class="fa fa-power-off"></i>
                             <span>Log Out</span>
                         </a>
@@ -127,7 +127,7 @@ if (!isset($_SESSION["login"])) {
                                 <a class="search-link" href="#"><i class="ri-search-line"></i></a>
                             </form>
                         </div> -->
-                        <a href="../../../comle/../companyProfile/admin/signout.php" class="btn btn-success mx-3 logout-btn">
+                        <a href="../../../comle/../companyProfile/admin/signout.php" class="btn btn-success mx-3 logout-btn" onclick="return confirm('Apakah Kamu Yakin Untuk Logout?')">
                             <i class="fa fa-power-off"></i>Log Out
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
