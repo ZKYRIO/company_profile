@@ -197,10 +197,10 @@ dl dd:last-child {
 loading
 ------------------------------------------------*/
 #loading {
-  background: #fff url(../images/loader.gif) no-repeat scroll center center;
+  background: #fff url(../images/myLoader.gif) no-repeat scroll center center;
   height: 100%;
   width: 100%;
-  background-size: 10%;
+  background-size: 20%;
   position: fixed;
   margin-top: 0px;
   top: 0px;
