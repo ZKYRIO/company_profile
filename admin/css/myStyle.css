@@ -81,6 +81,13 @@ nav .ri-fullscreen-exit-line:before {
     display: flex; 
     align-items: center; 
     justify-content: center;
+    flex-direction: column;
+}
+
+.sign-in-page .row .sign-in-details h1,
+.sign-up-page .row .sign-up-details h1 {
+    color: white;
+    font-weight: 600;
 }
 
 
@@ -100,9 +107,19 @@ thead tr th {
         border-radius: 0px 0 37px 37px ;
     }
     
+    .sign-in-page .row .sign-in-details,
+    .sign-up-page .row .sign-up-details {
+        padding: 1.5rem 0;
+    }
+
     .sign-in-page .row .sign-in-details img,
     .sign-up-page .row .sign-up-details img {
-        width: 50%;
+        width: 30%;
+    }
+
+    .sign-in-page .row .sign-in-details h1,
+    .sign-up-page .row .sign-up-details h1 {
+        font-size: 1rem;
     }
 
     .sign-in-from h1 ,

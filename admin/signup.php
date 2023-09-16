@@ -110,7 +110,9 @@ $identitasweb = mysqli_fetch_assoc($identitaswebs);
 
                 <div class="col-md-6 text-center sign-up-details">
                     <img src="img/identitasWeb/<?php echo $identitasweb['logo_instansi'] ?>" style="background: rgb(214,255,208);background: radial-gradient(circle, rgba(214,255,208,0.8409488795518207) 13%, rgba(107,255,87,0) 31%, rgba(34,165,0,0) 100%);" 
-                    width="70%" alt="logo">
+                    width="50%" alt="logo">
+
+                    <h1><?php echo $identitasweb['nama_instansi'] ?></h1>
                 </div>
             </div>
         </div>
