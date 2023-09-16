@@ -1,5 +1,9 @@
 <?php
 include 'signin_act.php';
+
+// Ambil data user dari database
+$identitaswebs = mysqli_query($db, "SELECT * FROM identitas_web");
+$identitasweb = mysqli_fetch_assoc($identitaswebs);
 ?>
 
 <!doctype html>
@@ -36,34 +40,14 @@ include 'signin_act.php';
     <section class="sign-in-page">
         <div class="container sign-in-page-bg mt-5 mb-5 p-0">
             <div class="row no-gutters">
-                <div class="col-md-6 text-center">
-                    <div class="sign-in-detail text-white">
-                        <a class="sign-in-logo mb-5" href="#"><img src="images/logo-white.png" class="img-fluid" alt="logo"></a>
-                        <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="0">
-                            <div class="item">
-                                <img src="images/login/1.png" class="img-fluid mb-4" alt="logo">
-                                <h4 class="mb-1 text-white">Manage your orders</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content.</p>
-                            </div>
-                            <div class="item">
-                                <img src="images/login/2.png" class="img-fluid mb-4" alt="logo">
-                                <h4 class="mb-1 text-white">Manage your orders</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content.</p>
-                            </div>
-                            <div class="item">
-                                <img src="images/login/3.png" class="img-fluid mb-4" alt="logo">
-                                <h4 class="mb-1 text-white">Manage your orders</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-6 text-center sign-in-details">
+                <img src="img/identitasWeb/<?php echo $identitasweb['logo_instansi'] ?>" style="background: rgb(214,255,208);background: radial-gradient(circle, rgba(214,255,208,0.8409488795518207) 13%, rgba(107,255,87,0) 31%, rgba(34,165,0,0) 100%);" 
+                    width="70%" alt="logo">
                 </div>
                 
                 <div class="col-md-6 position-relative">
                     <div class="sign-in-from">
                         <h1 class="mb-0">Sign in</h1>
-                        <p>Enter your email address and password to access admin panel.</p>
-
                         <!-- Banner Error -->
                         <?php if (isset($error)) : ?>
                             <p style="color: white; font-weight: bold; width: fit-content; background: red; font-style: italic; padding: .8rem 1.5rem;">Email atau password error !</p>
