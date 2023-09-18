@@ -72,6 +72,11 @@
                 // scrollY: '200rem'
             });
         } );
+
+        function closeSidebar() {
+            $('body').removeClass('sidebar-main');
+            $('.wrapper-menu').removeClass('open');
+        }
     </script>
 
     <!-- Preview Image After Upload -->

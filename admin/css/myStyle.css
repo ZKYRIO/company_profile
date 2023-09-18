@@ -33,6 +33,19 @@ nav .ri-fullscreen-exit-line:before {
     color: var(--green);
 }
 
+.wrapper-menu {
+    line-height: 72px;
+}
+
+.iq-sub-dropdown .iq-card .iq-card-body a {
+    display: block;
+    padding: 1rem;
+}
+
+.iq-sub-dropdown .iq-card .iq-card-body a:hover {
+    color: rgb(2, 61, 0) !important;
+}
+
 .iq-card-body {
     display: flex;
     justify-content: space-between;
@@ -96,6 +109,7 @@ thead tr th {
     text-align: center !important;
 }
 
+/* sign up & sign in page */
 @media screen AND (max-width: 767px) {
     .sign-in-page,
     .sign-up-page {
@@ -142,5 +156,16 @@ thead tr th {
 
     .sign-up-detail {
         height: auto;
+    }
+}
+
+
+@media screen AND (max-width: 767px) {
+    .iq-top-navbar .navbar {
+        display: flex !important;
+    }
+
+    .close_sidebar {
+        display: block !important;
     }
 }
