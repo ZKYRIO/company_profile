@@ -1,5 +1,5 @@
 <?php
-include 'includes/koneksi.php';
+include './../koneksi/koneksi.php';
 session_start();
 
 // Cek apakah user sudah pernah login apa belum

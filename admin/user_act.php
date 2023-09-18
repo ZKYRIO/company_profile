@@ -1,5 +1,5 @@
 <?php
-require 'includes/koneksi.php';
+include './../koneksi/koneksi.php';
 
 function insertUser($data) {
     global $db;
