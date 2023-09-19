@@ -63,20 +63,11 @@ $identitasWeb = mysqli_fetch_assoc($identitasWebs);
                             </div>
                         </div>
 
-                        <!-- <div class="form-row">
-                            <div class="col">
-                                <label for="banner_profile"><strong>Banner Profile Instansi</strong></label>
-                                <img src="img/identitasWeb/<?php echo $identitasWeb["banner_profile"] ?>" alt="">
-                                <input type="file" class="form-control-file" name="banner_profile" id="banner_profile">
-                                <input type="hidden" name="banner_profile_lama" value="<?php echo $identitasWeb["banner_profile"] ?>">
-                            </div>
-                        </div> -->
-
                         <div class="form-row">
                             <div class="col">
                                 <label for="banner_profile"><strong>Banner Profile</strong></label>
                                 <div class="form-gambar">
-                                    <img id="output_image" src="img/identitasWeb/<?php echo $identitasWeb['banner_profile'] ?>" width="400" style="border-radius: 0; display: none;">
+                                    <img id="output_image" src="img/identitasWeb/<?php echo $identitasWeb['banner_profile'] ?>" width="200" style="border-radius: 0;">
                                     <input type="file" class="form-control-file" name="banner_profile" id="banner_profile" style="margin-top: 1.5rem;" onchange="preview_image(event)">
                                     <input type="hidden" name="banner_profile_lama" id="banner_profile_lama" value="<?php echo $identitasWeb['banner_profile'] ?>">
                                 </div>
@@ -105,21 +96,12 @@ $identitasWeb = mysqli_fetch_assoc($identitasWebs);
                             </div>
                         </div>
 
-                        <!-- <div class="form-row">
-                            <div class="col">
-                                <label for="logo_instansi"><strong>Logo Instansi</strong></label>
-                                <img src="img/identitasWeb/<?php echo $identitasWeb["logo_instansi"] ?>" alt="">
-                                <input type="file" class="form-control-file" name="logo_instansi" id="logo_instansi">
-                                <input type="hidden" name="logo_instansi_lama" value="<?php echo $identitasWeb["logo_instansi"] ?>">
-                            </div>
-                        </div> -->
-
                         <div class="form-row">
                             <div class="col">
                                 <label for="logo_instansi"><strong>Logo Instansi</strong></label>
                                 <div class="form-gambar">
-                                    <img id="output_image" src="img/identitasWeb/<?php echo $identitasWeb['logo_instansi'] ?>" width="100" alt="">
-                                    <input type="file" class="form-control-file" name="logo_instansi" id="logo_instansi" style="margin-top: 1.5rem;" onchange="preview_image(event)">
+                                    <img id="output_image2" src="img/identitasWeb/<?php echo $identitasWeb['logo_instansi'] ?>" width="125" alt="">
+                                    <input type="file" class="form-control-file" name="logo_instansi" id="logo_instansi" style="margin-top: 1.5rem;" onchange="preview_image2(event)">
                                     <input type="hidden" name="logo_instansi_lama" id="logo_instansi_lama" value="<?php echo $identitasWeb['logo_instansi'] ?>">
                                 </div>
                             </div> 
