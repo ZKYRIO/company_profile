@@ -1,5 +1,5 @@
 <?php
-Require 'includes/koneksi.php';
+include './../koneksi/koneksi.php';
 include 'includes/header.php';
 
 // Ambil data user dari database

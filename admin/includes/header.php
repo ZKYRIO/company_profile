@@ -1,5 +1,5 @@
 <?php
-Require 'koneksi.php';
+include './../koneksi/koneksi.php';
 session_start();
 
 global $_SESSION;

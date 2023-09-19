@@ -1,5 +1,5 @@
 <?php
-include 'includes/koneksi.php';
+include './../koneksi/koneksi.php';
 
 function signup($data) {
     global $db;
