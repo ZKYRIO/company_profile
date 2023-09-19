@@ -94,7 +94,7 @@ function upload($fotoFor) {
     }
 
     // gambar siap diupload
-    $namaFileBaru = $fotoFor ;
+    $namaFileBaru = uniqid() ;
     $namaFileBaru .= '.' ;
     $namaFileBaru .= $ekstensiGambar;
     move_uploaded_file($tmp , 'img/identitasWeb/' . $namaFileBaru);
