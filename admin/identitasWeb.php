@@ -37,7 +37,7 @@ $rowCount = mysqli_num_rows($identitaswebs);
                                         <td><?php echo $no++ ?></td>
                                         <td><?php echo $identitasweb['nama_instansi']; ?></td>
                                         <td>
-                                            <img src="img/identitasWeb/<?php echo $identitasweb['logo_instansi']; ?>" alt="">
+                                            <img src="img/identitasWeb/<?php echo $identitasweb['logo_instansi']; ?>" width="125" alt="">
                                         </td>
                                         <td><?php echo $identitasweb['visi_instansi']; ?></td>
                                         <td><?php echo $identitasweb['misi_instansi']; ?></td>
