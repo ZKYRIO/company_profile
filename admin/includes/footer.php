@@ -91,6 +91,19 @@
             reader.readAsDataURL(event.target.files[0]);
         }
     </script>
+
+    <!-- Preview Image After Upload 2 ( untuk identitas web, ) -->
+    <script type='text/javascript'>
+        function preview_image2(event) {
+            var reader = new FileReader();
+            reader.onload = function() {
+                var output = document.getElementById('output_image2');
+                output.style.display = "flex"; // khusus form yang dipake untuk tambah data
+                output.src = reader.result;
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
 <!-- Javascript END -->
 </body>
 </html>
