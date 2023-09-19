@@ -1,5 +1,4 @@
 <?php
-include "includes/koneksi.php";
 
 function updateIdentitasWeb($data) {
     global $db;

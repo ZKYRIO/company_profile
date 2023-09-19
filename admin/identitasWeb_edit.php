@@ -1,6 +1,6 @@
 <?php
-include 'identitasWeb_act.php';
 include 'includes/header.php';
+include 'identitasWeb_act.php';
 
 if( isset($_POST["submit"]) ) {
     if ( updateIdentitasWeb($_POST) > 0 ) {
