@@ -97,8 +97,8 @@ nav .ri-fullscreen-exit-line:before {
     flex-direction: column;
 }
 
-.sign-in-page .row .sign-in-details h1,
-.sign-up-page .row .sign-up-details h1 {
+.sign-in-page .row .sign-in-details h2,
+.sign-up-page .row .sign-up-details h2 {
     color: white;
     font-weight: 600;
 }
@@ -131,8 +131,8 @@ thead tr th {
         width: 30%;
     }
 
-    .sign-in-page .row .sign-in-details h1,
-    .sign-up-page .row .sign-up-details h1 {
+    .sign-in-page .row .sign-in-details h2,
+    .sign-up-page .row .sign-up-details h2 {
         font-size: 1rem;
     }
 
