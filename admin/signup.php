@@ -7,16 +7,18 @@ if ( isset($_POST["signUp"]) ) {
         echo "
             <script type='text/javascript'>
                 alert('user berhasil ditambahkan !');
+                document.location.href = 'signin.php';
             </script>
         ";
-        header("Location: index.php");
         exit;
     } else {
         echo "
             <script>
                 alert('user gagal ditambahkan !');
+                document.location.href = 'signup.php';
             </script>
         ";
+        exit;
     }
 }
 
