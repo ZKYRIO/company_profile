@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Global CSS Button */
+.btn-bg-green {
+    background-color: #9DC403;
+    font-weight: 500;
+    color: white;
+}
+
+.btn-bg-green:hover {
+    background-color: #435400;
+    color: #fff;
+}
+/* End Global Button CSS */
+
+/* Header */
+.carousel-inner {
+    height: 550px;
+}
+/* Close Header */
+
+/* Content */
+.about {
+    margin-top: 2.5em;
+}
+
+.about .card {
+    transition: .5s;
+    border-color: #8BAC06;
+    border-width: 1.5px;
+}
+
+.about .card:hover {
+    transition: .5s;
+    box-shadow: 3px 3px 7px rgba(0,0,0, .3);
+    color: #fff;
+    background-color: #8bad01;
+}
+
+.text-color {
+    color: #8BAC06;
+}
+
+.profile-pic img {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.artikel {
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+}
+
+.artikel .card {
+    height: 457px;
+}
+
+.artikel .news-img img {
+    height: 13rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.N1 {
+    background-image: url('contentimg/picNews1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.N2 {
+    background-image: url('contentimg/picNews2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.N3 {
+    background-image: url('contentimg/picNews3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.see-more a:hover {
+    border-width: 1px;
+    border-color: #8BAC06;
+}
+/* Close Content */
+
+.main {
+    height: 400px;
+}
+
+
+/* Footer */
+footer {
+    /* background-color: #8BAC06; */
+    padding: 2.5em 0 1.5em 0;
+    color: white;
+}
+
+footer .containerr {
+    display: grid;
+    grid-template-areas: 
+        'brand link sosmed'
+        'brand link sosmed'
+        ;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.brand {
+    grid-area: brand;
+}
+
+.brand h1 {
+    font-size: 3.75em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hyperlink {
+    grid-area: link;
+    text-align: center;
+}
+
+.hyperlink h3 {
+    font-size: 21px;
+}
+
+.link {
+    margin: 0;
+    padding: 11px 0 0 0;
+}
+
+.hyperlink .link {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link li {
+    list-style-type: none;
+}
+
+.link li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 21px;
+    padding: 10px;
+}
+
+.link li a:hover {
+    background-color: #435400;
+    border-radius: 5px;
+}
+
+.medsos {
+    grid-area: sosmed;
+    text-align: center;
+}
+
+.medsos h3 {
+    font-size: 21px;
+}
+
+.medsos .logo {
+    padding: 11px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Close Footer */
+
+@media screen and (max-width:550px) {
+    /* Header Top */
+    .copyright {
+        font-size: .7em;
+    }
+
+    /* navbar */
+    .nav-link {
+        padding: 10px;
+    }
+    /* Close Navbar */
+
+    /* Header */
+    .carousel-inner {
+        height: 35vh;
+    }
+    /* Close Header */
+
+    /* Content */
+    .about .row .visi {
+        margin-bottom: 1rem;
+    }
+
+    .artikel .card {
+        margin-top: 20px;
+    }
+
+    .profile-pic img {
+        width: 92.5vw;
+        border-radius: 5px 5px 0px 0px;
+    }
+    /* Content Close */
+
+    /* Footer */
+    footer .containerr {
+        grid-template-areas: 
+            "brand"
+            "link"
+            "sosmed"
+        ;
+        gap: 1.5em;
+    }
+
+        .brand h1 {
+            font-size: 3.4em;
+        }
+
+        .hyperlink h3 {
+            margin: 0;
+        }
+
+        .hyperlink .link {
+            padding: 0;
+            margin: 0;
+        }
+
+        .hyperlink .link a {
+            font-size: 1.2em;
+        }
+
+        .medsos h3 {
+            margin: 0;
+            padding: 0;
+        }
+}
