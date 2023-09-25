@@ -92,7 +92,8 @@ include ('index_func.php');
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="profile-pic">
-                                        <img src="../companyProfile/admin/img/identitasWeb/<?php echo $identitasWeb['banner_profile'] ?>" alt="" width="550">
+                                        <img src="../companyProfile/admin/img/identitasWeb/<?php echo $identitasWeb['banner_profile'] ?>" alt="" 
+                                        style="width: 100% !important; height: 22.7rem !important; object-fit: cover !important;">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
