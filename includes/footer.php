@@ -8,13 +8,13 @@
                 <h3>Kunjungi Laman Kami Lainnya</h3>
                 <ul class="link">
                     <li>
-                        <a href="#">Beranda</a>
+                        <a href="../companyProfile/index.php">Beranda</a>
                     </li>
                     <li>
                         <a href="#">Karir</a>
                     </li>
                     <li>
-                        <a href="#">Berita</a>
+                        <a href="../companyProfile/blog.php">Berita</a>
                     </li>
                 </ul>
             </div>
