@@ -15,15 +15,15 @@ include ('function.php');
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Header CSS -->
-    <link rel="stylesheet" href="../website/css/header.css">
+    <link rel="stylesheet" href="../companyProfile/css/header.css">
     <!-- Index CSS -->
-    <link rel="stylesheet" href="../website/css/index.css">
+    <link rel="stylesheet" href="../companyProfile/css/index.css">
     <!-- Blog CSS -->
-    <link rel="stylesheet" href="../website/css/blog.css">
+    <link rel="stylesheet" href="../companyProfile/css/blog.css">
     <!-- Detail Blog CSS -->
-    <link rel="stylesheet" href="../website/css/detail-blog.css">
+    <link rel="stylesheet" href="../companyProfile/css/detail-blog.css">
     <!-- Footer CSS -->
-    <link rel="stylesheet" href="../website/css/footer.css">
+    <link rel="stylesheet" href="../companyProfile/css/footer.css">
 </head>
 <body>
     <!-- Header Top -->
