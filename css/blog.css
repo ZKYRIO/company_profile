@@ -73,6 +73,12 @@ main .blog .blog-lain {
     padding: 0 0 0 .5rem;
 }
 
+.blog-lain .informasi-penulis img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
 .sidebar-search form {
     display: flex;
     flex-direction: column;

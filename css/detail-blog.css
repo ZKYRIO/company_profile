@@ -8,6 +8,12 @@
     display: flex;
 }
 
+.blog-item-content .blog-content-penulis img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
 .blog-item-content .blog-item-img img {
     width: 100%;
     object-fit: cover;
