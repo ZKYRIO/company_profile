@@ -1,0 +1,29 @@
+/* Content */
+.detail-blog {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.blog-item-content .blog-content-penulis {
+    display: flex;
+}
+
+.blog-item-content .blog-item-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.informasi-creator {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-react {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar-react svg {
+    width: 50px;
+}
+/* Close Content */

@@ -1,0 +1,134 @@
+/* Content */
+main .blog {
+    margin-top: 4em;
+    margin-bottom: 3em;
+}
+
+main .blog-terbaru {
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 22px 22px 30px -20px rgba(0,0,0,0.1);
+    transition: .5s;
+}
+
+main .blog-terbaru:hover {
+    box-shadow: 22px 22px 30px -20px rgb(104,191,9, .3);
+    transition: .5s;
+}
+
+.blog-terbaru .blog-item-content {
+    padding:1rem 0 0 0;
+}
+
+.blog-terbaru .blog-item-img img {
+    height: 28rem;
+    object-fit: cover;
+}
+
+.blog-terbaru .blog-title {
+    padding-right: .5rem;
+}
+
+.blog-terbaru .blog-title a,
+.blog-lain .blog-title {
+    color: black;
+    text-decoration: none;
+}
+
+.blog-terbaru .blog-title a:hover,
+.blog-lain .blog-title:hover {
+    color: rgb(104,191,9);
+    text-decoration: none;
+}
+
+.blog-penulis .identitas-penulis span {
+    margin: 0 0 0 1rem;
+}
+
+.blog-terbaru .blog-informasi .date {
+    display: flex;
+    align-items: center;
+}
+
+.blog-item-content .blog-desk {
+    margin: 2rem 0 0 0;
+}
+
+main .blog .blog-lain {
+    border-radius: 1rem;
+    box-shadow: 22px 22px 30px -20px rgba(0,0,0,0.1);
+    transition: .5s;
+}
+
+.blog-lain .blog-img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-lain .blog-detail {
+    padding: 1.5rem 2rem 1.5rem 1rem;
+}
+
+.blog-lain .informasi-penulis .nama-penulis {
+    padding: 0 0 0 .5rem;
+}
+
+.sidebar-search form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.latepost-blog .latepost-blog-img img {
+    width: 9rem;
+    height: 6rem;
+    object-fit: cover;
+}
+
+.latepost-blog-body h6 a {
+    color: black;
+    text-decoration: none;
+}
+
+.latepost-blog-body h6 a:hover {
+    color: rgb(104,191,9);
+}
+
+.latepost-blog-date {
+    font-size: .8em;
+}
+
+.see-more-blog a:hover {
+    border-width: 1px;
+    border-color: #8BAC06;
+}
+/* Close Content */
+
+
+/* RESPONSIVE BREAKPOINT */
+@media screen and (max-width:550px) {
+    /* Content */
+    .blog-lain {
+        display: block;
+    }
+
+    .blog-item-img {
+        height: 30vh;
+    }
+    
+    .blog-terbaru .blog-informasi .row {
+        flex-direction: column-reverse;
+    }
+
+    .blog-terbaru .blog-informasi .date {
+        padding-bottom: 1rem;
+    }
+
+    .blog-lain .blog-detail {
+        padding-left: 1.5rem;
+    }
+
+    .sidebar {
+        margin-top: 2em;
+    }
+}

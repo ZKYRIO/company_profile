@@ -1,0 +1,70 @@
+/* Header Top */
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+    color: #fff;
+    background: rgb(104,191,9);
+    background: linear-gradient(0deg, rgba(104,191,9,1) 0%, rgba(7,133,19,1) 100%);
+}
+/* Close Header Top */
+
+/* Navbar */
+.navbar {
+    padding: 1rem;
+}
+
+.bg-navbar {
+    background: rgb(199,247,0);
+    background: linear-gradient(0deg, rgba(199,247,0,1) 0%, rgba(104,191,9,1) 100%);
+}
+
+.navbar-brand {
+    font-size: 1.4em;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-link {
+    font-size: 1.1em;
+    color: black;
+}
+
+.active {
+    font-weight: 500;
+    background-color: #7CCB07 !important;
+    border-radius: 5px;
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #435400;
+    border-color: #435400;
+}
+
+/* Khusus Button "Hubungi Kami" */
+.btn-darkgreen {
+    border-color: #435400;
+}
+
+.btn-darkgreen:hover {
+    background-color: #7CCB07;
+    color: #fff;
+    font-weight: 500;
+}
+/* End */
+
+/*  Close Navbar */
+
+@media screen and (max-width:550px) {
+    /* Header Top */
+    .copyright {
+        font-size: .7em;
+    }
+
+    /* navbar */
+    .nav-link {
+        padding: 10px;
+    }
+    /* Close Navbar */
+}

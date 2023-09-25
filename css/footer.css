@@ -1,0 +1,117 @@
+/* Footer */
+footer {
+    background: rgb(199,247,0) !important;
+    background: linear-gradient(180deg, rgba(199,247,0,1) 0%, rgba(104,191,9,1) 60%, rgba(7,133,19,1) 100%) !important;
+    padding: 2.5em 0 1.5em 0;
+    color: white;
+}
+
+
+
+footer .containerr {
+    display: grid;
+    grid-template-areas: 
+        'brand link sosmed'
+        'brand link sosmed'
+        ;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.brand {
+    grid-area: brand;
+}
+
+.brand h1 {
+    font-size: 3.75em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hyperlink {
+    grid-area: link;
+    text-align: center;
+}
+
+.hyperlink h3 {
+    font-size: 21px;
+}
+
+.link {
+    margin: 0;
+    padding: 11px 0 0 0;
+}
+
+.hyperlink .link {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link li {
+    list-style-type: none;
+}
+
+.link li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 21px;
+    padding: 10px;
+}
+
+.link li a:hover {
+    background-color: #1D9210;
+    border-radius: 5px;
+}
+
+.medsos {
+    grid-area: sosmed;
+    text-align: center;
+}
+
+.medsos h3 {
+    font-size: 21px;
+}
+
+.medsos .logo {
+    padding: 11px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Close Footer */
+
+@media screen and (max-width:550px) {
+    /* Footer */
+    footer .containerr {
+        grid-template-areas: 
+            "brand"
+            "link"
+            "sosmed"
+        ;
+        gap: 1.5em;
+    }
+
+    .brand h1 {
+        font-size: 3.4em;
+    }
+
+    .hyperlink h3 {
+        margin: 0;
+    }
+
+    .hyperlink .link {
+        padding: 0;
+        margin: 0;
+    }
+
+    .hyperlink .link a {
+        font-size: 1.2em;
+    }
+
+    .medsos h3 {
+        margin: 0;
+        padding: 0;
+    }
+}
