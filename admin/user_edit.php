@@ -68,7 +68,7 @@ $user = mysqli_fetch_assoc($users);
                             <div class="col">
                                 <label for="foto_user"><strong>Foto Profile</strong></label>
                                 <div class="form-gambar">
-                                    <img id="output_image" src="img/users/<?php echo $user['foto_user'] ?>" width="125" alt="" >
+                                    <img id="output_image" src="img/users/<?php echo $user['foto_user'] ?>" alt="" style="width: 10%; object-fit: cover; aspect-ratio: 1/1;">
                                     <input type="file" class="form-control-file" name="foto_user" id="foto_user" onchange="preview_image(event)">
                                     <input type="hidden" name="foto_user_lama" id="foto_user_lama" value="<?php echo $user['foto_user'] ?>">
                                 </div>

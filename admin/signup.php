@@ -89,7 +89,7 @@ $identitasweb = mysqli_fetch_assoc($identitaswebs);
                                     <div class="col">
                                         <label for="foto_user"><strong>Foto Profile</strong></label>
                                         <div class="form-gambar">
-                                            <img id="output_image" width="75" style="display: none;">
+                                            <img id="output_image" width="75" style="display: none; width: 23%; object-fit: cover; aspect-ratio: 1/1;">
                                         <input type="file" class="form-control-file" name="foto_user" id="foto_user" onchange="preview_image(event)">
                                         </div>
                                     </div>

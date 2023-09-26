@@ -38,7 +38,7 @@ $rowCount = mysqli_num_rows($users);
                                     <tr>
                                         <td><?php echo $no++ ?></td>
                                         <td>
-                                            <img src="img/users/<?php echo $user['foto_user']; ?>" width="100" alt="">
+                                            <img src="img/users/<?php echo $user['foto_user']; ?>" alt="Foto User" style="width: 70%; object-fit: cover; aspect-ratio: 1/1;">
                                         </td>
                                         <td><?php echo $user['nama_user']; ?></td>
                                         <td><?php echo $user['email_user']; ?></td>

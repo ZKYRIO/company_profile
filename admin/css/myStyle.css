@@ -33,6 +33,11 @@ nav .ri-fullscreen-exit-line:before {
     color: var(--green);
 }
 
+nav .navbar-list li>a>img {
+    object-fit: cover;
+    object-position: center;
+}
+
 .wrapper-menu {
     line-height: 72px;
 }
