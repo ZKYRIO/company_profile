@@ -6,6 +6,9 @@ function insertSlider() {
 
     $fotoFor = "banner_slider";
     $gambarSlider = upload($fotoFor);
+    if(!$gambarSlider) {
+        return false;
+    }
 
     // sql insert query
     $query = "INSERT INTO slider VALUES( NULL , '$gambarSlider') ";

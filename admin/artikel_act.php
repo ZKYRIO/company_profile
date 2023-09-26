@@ -12,6 +12,10 @@ function insertArtikel($data) {
 
     $fotoFor = "banner_artikel";
     $bannerArtikel = upload($fotoFor);
+    // cek apakah func upload mengembalikan nilai false
+    if(!$bannerArtikel) {
+        return false;
+    }
 
     // sql insert query
     $query = "INSERT INTO artikel VALUES( NULL , $id_user ,'$judul' , STR_TO_DATE('$tanggal','%m-%d-%Y') , '$deskripsi' , '$content' , '$bannerArtikel' ) ";
