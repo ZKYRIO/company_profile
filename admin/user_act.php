@@ -151,8 +151,11 @@ function updateUser ($data) {
         if ( $foto_user === false ) {
             return false;
         } else {
-            // Hapus gambar yang ada di file
-            unlink("img/users/$fotoLama");
+            // Jika foto lama  profDefault.jpg
+            if($fotoLama != "profDefault.jpg"){
+                // Hapus gambar yang ada di file
+                unlink("img/users/$fotoLama");
+            }
         }
     }
 
