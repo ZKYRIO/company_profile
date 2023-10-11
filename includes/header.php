@@ -1,11 +1,12 @@
 <?php
-include ('/laragon/www/companyProfile/koneksi/koneksi.php');
-include ('function.php');
+include('/laragon/www/companyProfile/koneksi/koneksi.php');
+include('function.php');
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +26,10 @@ include ('function.php');
     <!-- Footer CSS -->
     <link rel="stylesheet" href="../companyProfile/css/footer.css">
 </head>
+
 <body>
+    <?php $basename = basename($_SERVER["SCRIPT_FILENAME"], '.php'); ?>
+
     <!-- Header Top -->
     <section class="header-top">
         <div class="copyright">
@@ -41,20 +45,23 @@ include ('function.php');
             <a class="navbar-brand mx-3" href="#">
                 <?php echo $identitasWeb['nama_instansi'] ?>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php" onclick="">Beranda</a>
+                        <a id="nav-link" class="nav-link <?php if ($basename == 'index') {
+                                                                echo 'active';
+                                                            } ?>" aria-current="page" href="index.php" onclick="">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Karir</a>
+                        <a id="nav-link" class="nav-link" href="#">Karir</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.php">Berita</a>
+                        <a id="nav-link" class="nav-link <?php if ($basename == 'blog') {
+                                                                echo 'active';
+                                                            } ?>" href="blog.php">Berita</a>
                     </li>
                     <li class="nav-item ms-2">
                         <button type="button" class="btn btn-darkgreen">Hubungi Kami</button>
