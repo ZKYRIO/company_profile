@@ -1,8 +1,8 @@
     <!-- Footer -->
     <footer>
         <div class="containerr">
-            <div class="brand">
-                <h1><?php echo $identitasWeb['nama_instansi'] ?></h1>
+            <div class="brand text-center">
+                <img src="../companyProfile/admin/img/identitasWeb/<?php echo $identitasWeb['logo_instansi'] ?>" alt="" style="width: 8rem;">
             </div>
             <div class="hyperlink">
                 <h3>Kunjungi Laman Kami Lainnya</h3>
