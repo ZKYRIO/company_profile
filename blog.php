@@ -74,7 +74,7 @@ include('blog_func.php');
                         <?php endforeach; ?>
 
                         <div class="see-more-blog mt-5">
-                            <a href="#" class="btn">
+                            <a class="btn" id="load_btn">
                                 <span>Tampilkan Artikel Lainnya</span>
                                 <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
                             </a>
@@ -124,6 +124,42 @@ include('blog_func.php');
     </main>
     <!-- Close Content -->
 
+    <script>
+
+        // ambil data dari local storage
+        var limit = localStorage.getItem('limit');
+
+        // cek apakah sudah ada data di local storage
+        if (limit === null) {
+            // Jika data belum ada, inisialisasikan limit awal
+            limit = 0;
+        } else {
+            // Jika data sudah ada, konversi dari string ke angka
+            limit = parseInt(limit);
+        }
+
+        var limitElement = document.getElementById("load_btn");
+        var tautan = document.getElementById("load_btn");
+
+        tautan.addEventListener("click", function() {
+            // Tambahkan ke limit
+            limit++;
+            
+            // Simpan limit di localStorage
+            localStorage.setItem('limit', limit);
+            
+            // Perbarui URL 
+            tautan.setAttribute("href", "blog.php?limit=" + limit);
+
+
+        });
+
+        // hapus value limit dari local storage
+        document.addEventListener("DOMContentLoaded", function() {
+            localStorage.removeItem("limit")
+        })
+
+    </script>
 
 <?php
 include('includes/footer.php')

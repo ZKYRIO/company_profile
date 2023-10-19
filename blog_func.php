@@ -1,6 +1,6 @@
 <?php 
 
-// Ambil data artikel with user dari yang paling baru
+// Ambil data artikel with user dari yang paling baru ( sidebar blog terbaru )
 $query = "SELECT id_artikel,
                  banner_artikel,
                  judul_artikel,
@@ -13,7 +13,9 @@ $query = "SELECT id_artikel,
 $articleUserNews = mysqli_query($db, $query);
 $articleUserNew = mysqli_fetch_assoc($articleUserNews);
 
-// mbil data artikel with user untuk blog lain setelah blog terbaru
+
+$LIMIT = isset($_GET['limit']) ? intval($_GET['limit']) + 4 : 4;
+// Ambil data artikel with user untuk blog lain setelah blog terbaru
 $query = "SELECT id_artikel,
                  banner_artikel,
                  judul_artikel,
@@ -22,7 +24,7 @@ $query = "SELECT id_artikel,
                  nama_user,
                  foto_user
           FROM artikel INNER JOIN user ON artikel.user_id = user.id
-          ORDER BY id_artikel DESC LIMIT 4 OFFSET 1";
+          ORDER BY id_artikel DESC LIMIT $LIMIT OFFSET 1";
 $articleUsers = mysqli_query($db, $query);
 $articleUser = mysqli_fetch_assoc($articleUsers);
 
