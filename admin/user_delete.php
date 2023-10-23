@@ -25,8 +25,12 @@ if ( mysqli_affected_rows($db) > 0 ) {
         unlink("./img/bannerArtikel/$banner_artikel_lama");
     }
 
-    // hapus foto user dari file
-    unlink("./img/users/$foto_user_lama");
+    // cek apakah gambar user bukan gambar default dari sistem ( profDefault.jpg )
+    if($foto_user_lama != "profDefault.jpg" ) {
+        
+        // hapus foto user dari file
+        unlink("./img/users/$foto_user_lama");
+    }
 
     echo "
     <script>
