@@ -16,6 +16,10 @@ a {
     border-radius: 25px;
 }
 
+.iq-sidebar-menu .iq-menu>li.menu-open, .iq-sidebar-menu .iq-menu>li.active {
+    margin: 10px auto;
+}
+
 nav .logout-btn:hover {
     background: red;
     border-color: red;

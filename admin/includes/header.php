@@ -55,6 +55,13 @@ if (!isset($_SESSION["login"])) {
 <!-- loader END -->
 
 <!-- Sidebar  -->
+    <?php 
+    $basename = basename($_SERVER["SCRIPT_FILENAME"], '.php'); 
+    $basename = explode("_",$basename);
+    $basename = $basename[0];
+
+    ?>
+    
     <div class="iq-sidebar" style="background: #034F00;"> 
         <button class="btn close_sidebar" type="button" id="close_sidebar" style="float: right; display: none; margin-top: 1rem;" onclick="closeSidebar()">
             <i class="fa fa-times-circle-o text-light" style="font-size: 1.5rem;" aria-hidden="true"></i>
@@ -66,25 +73,33 @@ if (!isset($_SESSION["login"])) {
                         <span class="d-block">Dashboard</span>
                         <i class="ri-subtract-line"></i>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item <?php if($basename == "idex") {
+                        echo "active";
+                    } ?>">
                         <a href="index.php" class="iq-waves-effect">
                             <i class="fa fa-home"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>                     
-                    <li class="sidebar-item">
+                    <li class="sidebar-item <?php if($basename == "user") {
+                        echo "active";
+                    } ?>">
                         <a href="user.php" class="iq-waves-effect">
                             <i class="ri-group-fill"></i>
                             <span>Pengguna</span>
                         </a>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item <?php if($basename == "identitasWeb") {
+                        echo "active";
+                    } ?>">
                         <a href="identitasWeb.php" class="iq-waves-effect">
                             <i class="fa fa-id-card"></i>
                             <span>Identitas Web</span>
                         </a>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item <?php if($basename == "bannerSlider") {
+                        echo "active";
+                    } ?>">
                         <a href="bannerSlider.php" class="iq-waves-effect">
                             <i class="fa fa-sliders"></i>
                             <span>Banner Slider</span>
@@ -95,7 +110,9 @@ if (!isset($_SESSION["login"])) {
                         <span class="d-block">Data Artikel</span>
                         <i class="ri-subtract-line"></i>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item <?php if($basename == "artikel") {
+                        echo "active";
+                    } ?>">
                         <a href="artikel.php" class="iq-waves-effect">
                             <i class="fa fa-newspaper-o"></i>
                             <span>Artikel</span>
