@@ -38,7 +38,7 @@ include('blog_func.php');
                                                     <div class="col-md-6 date">
                                                         <div class="blog-date">
                                                             <i class="fa-solid fa-calendar-days" style="color: #000000;"></i>
-                                                            <span><?php echo $date ?></span>
+                                                            <span><?php echo format_date($articleUserNew["tanggal_artikel"]) ?></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -94,11 +94,6 @@ include('blog_func.php');
                                 <h5 class="mb-3 border-bottom pb-2">Blog Terbaru</h5>
 
                                 <?php foreach( $articleUserNews as $articleUserNew) : ?>
-                                <?php 
-                                    //mengubah format tanggal 
-                                    $date = strtotime($articleUserNew['tanggal_artikel']);
-                                    $date = date("d - m - Y", $date);
-                                ?>
                                 <div class="latepost-blog d-flex mb-3">
                                     <a href="detail-blog.php?id_artikel=<?php echo $articleUserNew['id_artikel'] ?>">
                                         <div class="latepost-blog-img me-3">
@@ -111,7 +106,7 @@ include('blog_func.php');
                                                 <?php echo $articleUserNew['judul_artikel'] ?>
                                             </a>
                                         </h6>
-                                        <span class="latepost-blog-date"><?php echo $date ?></span>
+                                        <span class="latepost-blog-date"><?php echo format_date($articleUserNew['tanggal_artikel']) ?></span>
                                     </div>
                                 </div>
                                 <?php endforeach; ?>

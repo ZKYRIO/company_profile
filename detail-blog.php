@@ -17,7 +17,7 @@ include('detail-blog_func.php');
                                     <img src="../companyProfile/admin/img/users/<?php echo $articleUser['foto_user'] ?>" alt="" width="50">
                                     <div class="informasi-creator ms-3">
                                         <span><?php echo $articleUser['nama_user'] ?></span>
-                                        <span><?php echo $date ?></span>
+                                        <span><?php echo format_date($articleUser["tanggal_artikel"]) ?></span>
                                     </div>
                                 </div>
                                 <div class="blog-item-img">
@@ -35,12 +35,8 @@ include('detail-blog_func.php');
                         <div class="sidebar-latepost card border-0">
                             <h5 class="mb-3 border-bottom pb-2">Blog Terbaru</h5>
 
-                            <?php foreach( $articleUserNews as $articleUserNew) : ?>
-                            <?php 
-                                //mengubah format tanggal 
-                                $date = strtotime($articleUserNew['tanggal_artikel']);
-                                $date = date("d - m - Y", $date);
-                            ?>
+                            <?php
+                            foreach( $articleUserNews($articleUser['id_artikel']) as $articleUserNew) : ?>
                             <div class="latepost-blog d-flex mb-3">
                                 <a href="detail-blog.php?id_artikel=<?php echo $articleUserNew['id_artikel'] ?>">
                                     <div class="latepost-blog-img me-3">
@@ -53,7 +49,7 @@ include('detail-blog_func.php');
                                             <?php echo $articleUserNew['judul_artikel'] ?>
                                         </a>
                                     </h6>
-                                    <span class="latepost-blog-date"><?php echo $date ?></span>
+                                    <span class="latepost-blog-date"><?php echo format_date($articleUserNew["tanggal_artikel"]) ?></span>
                                 </div>
                             </div>
                             <?php endforeach; ?>

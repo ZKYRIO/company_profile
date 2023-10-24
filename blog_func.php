@@ -1,6 +1,6 @@
 <?php 
 
-// Ambil data artikel with user dari yang paling baru ( sidebar blog terbaru )
+// Ambil data artikel with user dari yang paling baru (sidebar blog terbaru & blog terbaru paling atas)
 $query = "SELECT id_artikel,
                  banner_artikel,
                  judul_artikel,
@@ -14,8 +14,8 @@ $articleUserNews = mysqli_query($db, $query);
 $articleUserNew = mysqli_fetch_assoc($articleUserNews);
 
 
+// Ambil data artikel with user untuk blog lainnya 
 $LIMIT = isset($_GET['limit']) ? intval($_GET['limit']) + 4 : 4;
-// Ambil data artikel with user untuk blog lain setelah blog terbaru
 $query = "SELECT id_artikel,
                  banner_artikel,
                  judul_artikel,
@@ -28,8 +28,10 @@ $query = "SELECT id_artikel,
 $articleUsers = mysqli_query($db, $query);
 $articleUser = mysqli_fetch_assoc($articleUsers);
 
-// mengubah format tanggal untuk artikel utama
-$oldDate = $articleUserNew["tanggal_artikel"];
-$date = strtotime($oldDate);
-$date = date("d - m - Y", $date);
+//mengubah format tanggal 
+function format_date($artikel) {
+    $date = strtotime($artikel);
+    $date = date("d - m - Y", $date);
+    return $date;
+}
 ?>
